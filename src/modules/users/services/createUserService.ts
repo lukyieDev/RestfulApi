@@ -13,6 +13,7 @@ interface Irequest {
 }
 
 class createUserService {
+
     public async execute({ name, password, email }: Irequest): Promise<User> {
 
         const usersRepository = getCustomRepository(UsersRepository);
